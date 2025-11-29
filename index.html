@@ -51,7 +51,7 @@
     footer{padding:44px 0;border-top:1px solid rgba(255,255,255,.08);color:#9aa4b2}
     .brand-grad{background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
 
-    /* ---- FOOD SECTOR SECTION ---- */
+    /* Food sector section */
     #sectors h3{
       font-size:1.2rem;
       margin-top:1.4rem;
@@ -83,6 +83,28 @@
       margin-top:4px;
       color:var(--muted);
     }
+
+    /* Presence section */
+    #presence h3{
+      font-size:1.1rem;
+      margin-top:1.2rem;
+      margin-bottom:.4rem;
+    }
+    .presence-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+      gap:10px 24px;
+      margin-top:14px;
+    }
+    .presence-item{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-weight:500;
+    }
+    .presence-item .flag{
+      font-size:1.2rem;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +119,7 @@
           <a href="#about">About</a>
           <a href="#capabilities">Capabilities</a>
           <a href="#sectors">Sectors</a>
+          <a href="#presence">Presence</a>
           <a href="#approach">How We Work</a>
           <a href="#group">Orizis Group</a>
           <a href="#contact" class="cta">Start a Conversation</a>
@@ -126,7 +149,7 @@
         <div class="stack" style="margin-top:14px">
           <span class="badge">Import & Export</span>
           <span class="badge">Government & Regulatory Liaison</span>
-          <span class="badge">Investor–Venture Matching</span>
+          <span class="badge">Investor-Venture Matching</span>
           <span class="badge">Cross-Border Payments Insight</span>
         </div>
       </div>
@@ -145,7 +168,7 @@
           <ul class="muted">
             <li>Global Trading (import/export) across commodities, food, consumer goods, industrial equipment, and more</li>
             <li>Government-level access: permits, standards, concessions, tenders, and PPP exploration</li>
-            <li>Investors ↔ ventures: connecting capital with vetted opportunities in Africa</li>
+            <li>Investors and ventures: connecting capital with vetted opportunities in Africa</li>
             <li>Group leverage: insights from fintech and web products within Orizis Group</li>
           </ul>
         </div>
@@ -179,7 +202,7 @@
           </div>
         </div>
         <div class="card">
-          <h3>Investor–Venture Matching</h3>
+          <h3>Investor-Venture Matching</h3>
           <p class="muted">We curate opportunities and connect investors to credible founders and operators. Our diligence focuses on execution capacity, regulatory fit, and route-to-market.</p>
           <div class="stack">
             <span class="pill">Pipeline curation</span>
@@ -220,11 +243,11 @@
     <!-- SECTORS - FOOD FOCUS -->
     <section id="sectors" class="section container">
       <div class="kicker">Core focus</div>
-      <h2>Food commodities and FMCG – our strongest global network</h2>
+      <h2>Food commodities and FMCG - our strongest global network</h2>
       <p class="muted">
         We are tightly connected to a wide network of verified food suppliers across Asia, Europe, LATAM
         and Africa. Our strength is in high-volume food products and FMCG, working directly with factories
-        and producers – not anonymous platforms.
+        and producers, not anonymous platforms.
       </p>
 
       <div class="grid col-2" style="align-items:flex-start">
@@ -232,11 +255,11 @@
         <div>
           <h3>Key food products we trade</h3>
           <ul class="muted">
-            <li>Sugar ICUMSA 45 / 600–1200</li>
-            <li>Rice – basmati, long grain, short grain</li>
-            <li>Grains – wheat, corn, barley</li>
+            <li>Sugar ICUMSA 45 / 600-1200</li>
+            <li>Rice - basmati, long grain, short grain</li>
+            <li>Grains - wheat, corn, barley</li>
             <li>Sunflower, soybean and palm oil</li>
-            <li>Milk powder – SMP and WMP</li>
+            <li>Milk powder - SMP and WMP</li>
             <li>Frozen poultry and meat</li>
             <li>Coffee and cocoa</li>
             <li>FMCG and food-grade packaging</li>
@@ -255,7 +278,7 @@
 
         <!-- Right column: image gallery -->
         <div>
-          <h3>Food products and storage – visual examples</h3>
+          <h3>Food products and storage - visual examples</h3>
           <div class="food-grid">
             <figure>
               <img src="images/45-icu-sugar.jpeg" alt="Refined white sugar ICUMSA 45">
@@ -264,27 +287,27 @@
 
             <figure>
               <img src="images/391791890.jpg" alt="Stacked sugar bags in warehouse">
-              <figcaption>Sugar bags – warehouse</figcaption>
+              <figcaption>Sugar bags - warehouse</figcaption>
             </figure>
 
             <figure>
               <img src="images/A8d49d0e0a987437a91867d942936a0a1j.avif" alt="White sugar bags - Brazil origin">
-              <figcaption>White sugar – Brazil origin</figcaption>
+              <figcaption>White sugar - Brazil origin</figcaption>
             </figure>
 
             <figure>
               <img src="images/agricultural-storage-warehouse-bags-corn-footage-165847580_iconl.webp" alt="Corn bags in agricultural storage warehouse">
-              <figcaption>Corn bags – agricultural storage</figcaption>
+              <figcaption>Corn bags - agricultural storage</figcaption>
             </figure>
 
             <figure>
               <img src="images/c0417442-800px-wm.jpg" alt="Coffee or cocoa bags ready for export">
-              <figcaption>Coffee / cocoa export bags</figcaption>
+              <figcaption>Coffee or cocoa export bags</figcaption>
             </figure>
 
             <figure>
               <img src="images/filling-line-sunflower-1L.jpg" alt="Sunflower oil bottling line">
-              <figcaption>Sunflower oil – bottling line</figcaption>
+              <figcaption>Sunflower oil - bottling line</figcaption>
             </figure>
 
             <figure>
@@ -301,13 +324,35 @@
               <img src="images/GrandSur-Almacenamiento-del-cacao.jpg" alt="Cocoa storage warehouse">
               <figcaption>Cocoa warehouse</figcaption>
             </figure>
-
-            <figure>
-              <img src="images/Ukraine-grain-export.webp" alt="Grain for export">
-              <figcaption>Grain for export</figcaption>
-            </figure>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- PRESENCE -->
+    <section id="presence" class="section container">
+      <div class="kicker">Local presence</div>
+      <h2>On the ground across Africa, Israel and Georgia</h2>
+      <p class="muted">
+        Beyond trading from a distance, Orizis-International- is present on the ground in key markets.
+        Local partners and field teams help us validate suppliers, move goods, and build long-term
+        relationships with governments and buyers.
+      </p>
+
+      <div class="presence-grid">
+        <div class="presence-item"><span class="flag">🇿🇲</span><span>Zambia</span></div>
+        <div class="presence-item"><span class="flag">🇹🇿</span><span>Tanzania</span></div>
+        <div class="presence-item"><span class="flag">🇧🇼</span><span>Botswana</span></div>
+        <div class="presence-item"><span class="flag">🇱🇷</span><span>Liberia</span></div>
+        <div class="presence-item"><span class="flag">🇨🇩</span><span>Congo</span></div>
+        <div class="presence-item"><span class="flag">🇪🇹</span><span>Ethiopia</span></div>
+        <div class="presence-item"><span class="flag">🇳🇬</span><span>Nigeria</span></div>
+        <div class="presence-item"><span class="flag">🇿🇼</span><span>Zimbabwe</span></div>
+        <div class="presence-item"><span class="flag">🇲🇼</span><span>Malawi</span></div>
+        <div class="presence-item"><span class="flag">🇧🇮</span><span>Burundi</span></div>
+        <div class="presence-item"><span class="flag">🇲🇿</span><span>Mozambique</span></div>
+        <div class="presence-item"><span class="flag">🇮🇱</span><span>Israel</span></div>
+        <div class="presence-item"><span class="flag">🇬🇪</span><span>Georgia</span></div>
       </div>
     </section>
 
