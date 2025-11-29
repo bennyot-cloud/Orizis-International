@@ -13,22 +13,75 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0b0e14;--muted:#9aa4b2;--brand:#2dd4bf;--brand2:#60a5fa;--ink:#e5e7eb}
+    :root{
+      --bg:#0b0e14;
+      --muted:#9aa4b2;
+      --brand:#2dd4bf;
+      --brand2:#60a5fa;
+      --ink:#e5e7eb;
+    }
     *{box-sizing:border-box}
-    html,body{margin:0;height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0f172a 100%);color:var(--ink)}
+    html,body{
+      margin:0;
+      height:100%;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(180deg,#0b0e14 0%,#0f172a 100%);
+      color:var(--ink);
+    }
     a{color:inherit;text-decoration:none}
     .container{max-width:1200px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,14,20,.7);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    header{
+      position:sticky;
+      top:0;
+      backdrop-filter:saturate(140%) blur(8px);
+      background:rgba(11,14,20,.78);
+      border-bottom:1px solid rgba(255,255,255,.06);
+      z-index:50;
+    }
     nav{display:flex;align-items:center;justify-content:space-between}
     .logo{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.4px}
-    .logo-img{height:28px;width:auto;border-radius:8px;box-shadow:0 6px 20px rgba(45,212,191,.35)}
+    .logo-img{
+      height:28px;
+      width:auto;
+      border-radius:8px;
+      box-shadow:0 6px 18px rgba(45,212,191,.32);
+    }
     .nav-links a{opacity:.85;margin-left:22px;font-weight:600}
-    .cta{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0b0e14;font-weight:800}
-    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:40px 0 56px 0}
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 18px;
+      border-radius:14px;
+      background:linear-gradient(135deg,rgba(45,212,191,.94),rgba(96,165,250,.88));
+      color:#0b0e14;
+      font-weight:800;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:center;
+      padding:40px 0 56px 0;
+    }
     .hero h1{font-size:48px;line-height:1.08;margin:0 0 16px}
     .hero p{color:var(--muted);font-size:18px}
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
-    .kicker{color:var(--brand);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+    .badge{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.07);
+    }
+    .kicker{
+      color:var(--brand);
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-size:12px;
+    }
     .cta-bar{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
     .section{padding:56px 0}
     h2{font-size:34px;margin:8px 0 14px}
@@ -41,15 +94,48 @@
       .grid.col-2{grid-template-columns:1fr}
       .nav-links{display:none}
     }
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:20px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      padding:20px;
+    }
     .muted{color:var(--muted)}
-    .pill{display:inline-block;border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;font-size:12px;color:#cbd5e1}
+    .pill{
+      display:inline-block;
+      border:1px solid rgba(255,255,255,.14);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:#cbd5e1;
+    }
     .stack{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
     /* Image helpers */
-    .img-wrap{position:relative;aspect-ratio:16/10;border-radius:24px;overflow:hidden}
-    .img-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-    footer{padding:44px 0;border-top:1px solid rgba(255,255,255,.08);color:#9aa4b2}
-    .brand-grad{background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .img-wrap{
+      position:relative;
+      aspect-ratio:16/10;
+      border-radius:24px;
+      overflow:hidden;
+    }
+    .img-wrap img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    footer{
+      padding:44px 0;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:#9aa4b2;
+    }
+    .brand-grad{
+      background:linear-gradient(135deg,#a5f3fc,#93c5fd);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
 
     /* Food sector section */
     #sectors h3{
@@ -93,17 +179,12 @@
     .presence-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-      gap:10px 24px;
+      gap:6px 24px;
       margin-top:14px;
     }
     .presence-item{
-      display:flex;
-      align-items:center;
-      gap:8px;
       font-weight:500;
-    }
-    .presence-item .flag{
-      font-size:1.2rem;
+      padding:3px 0;
     }
   </style>
 </head>
@@ -329,33 +410,6 @@
       </div>
     </section>
 
-    <!-- PRESENCE -->
-    <section id="presence" class="section container">
-      <div class="kicker">Local presence</div>
-      <h2>On the ground across Africa, Israel and Georgia</h2>
-      <p class="muted">
-        Beyond trading from a distance, Orizis-International- is present on the ground in key markets.
-        Local partners and field teams help us validate suppliers, move goods, and build long-term
-        relationships with governments and buyers.
-      </p>
-
-      <div class="presence-grid">
-        <div class="presence-item"><span class="flag">🇿🇲</span><span>Zambia</span></div>
-        <div class="presence-item"><span class="flag">🇹🇿</span><span>Tanzania</span></div>
-        <div class="presence-item"><span class="flag">🇧🇼</span><span>Botswana</span></div>
-        <div class="presence-item"><span class="flag">🇱🇷</span><span>Liberia</span></div>
-        <div class="presence-item"><span class="flag">🇨🇩</span><span>Congo</span></div>
-        <div class="presence-item"><span class="flag">🇪🇹</span><span>Ethiopia</span></div>
-        <div class="presence-item"><span class="flag">🇳🇬</span><span>Nigeria</span></div>
-        <div class="presence-item"><span class="flag">🇿🇼</span><span>Zimbabwe</span></div>
-        <div class="presence-item"><span class="flag">🇲🇼</span><span>Malawi</span></div>
-        <div class="presence-item"><span class="flag">🇧🇮</span><span>Burundi</span></div>
-        <div class="presence-item"><span class="flag">🇲🇿</span><span>Mozambique</span></div>
-        <div class="presence-item"><span class="flag">🇮🇱</span><span>Israel</span></div>
-        <div class="presence-item"><span class="flag">🇬🇪</span><span>Georgia</span></div>
-      </div>
-    </section>
-
     <!-- HOW WE WORK -->
     <section id="approach" class="section container">
       <div class="kicker">How we work</div>
@@ -386,6 +440,34 @@
         <span class="pill">E-commerce enablement</span>
         <span class="pill">Digital marketplaces</span>
         <span class="pill">Fintech & payments insight</span>
+      </div>
+    </section>
+
+    <!-- PRESENCE -->
+    <section id="presence" class="section container">
+      <div class="kicker">Local presence</div>
+      <h2>On the ground across Africa, Israel and Georgia</h2>
+      <p class="muted">
+        Beyond trading from a distance, Orizis-International- is present on the ground in key markets.
+        Local partners and field teams help us validate suppliers, move goods, and build long-term
+        relationships with governments and buyers.
+      </p>
+
+      <h3>Active presence and local partners in:</h3>
+      <div class="presence-grid muted">
+        <div class="presence-item">Zambia</div>
+        <div class="presence-item">Tanzania</div>
+        <div class="presence-item">Botswana</div>
+        <div class="presence-item">Liberia</div>
+        <div class="presence-item">Congo</div>
+        <div class="presence-item">Ethiopia</div>
+        <div class="presence-item">Nigeria</div>
+        <div class="presence-item">Zimbabwe</div>
+        <div class="presence-item">Malawi</div>
+        <div class="presence-item">Burundi</div>
+        <div class="presence-item">Mozambique</div>
+        <div class="presence-item">Israel</div>
+        <div class="presence-item">Georgia</div>
       </div>
     </section>
 
